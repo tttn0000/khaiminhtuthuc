@@ -1,0 +1,368 @@
+<!DOCTYPE html> <html lang="en"><head>
+<title>TKM - Đề Cương - Xác Suất</title>
+<base href="..">
+<meta name="pathname" content="99-tkm/tkm-đề-cương-xác-suất.html">
+<meta name="description" content="Trường Khải Minh - TKM - Đề Cương - Xác Suất">
+<meta property="og:title" content="TKM - Đề Cương - Xác Suất">
+<meta property="og:description" content="Trường Khải Minh - TKM - Đề Cương - Xác Suất">
+<meta property="og:type" content="website">
+<meta property="og:url" content="99-tkm/tkm-đề-cương-xác-suất.html">
+<meta property="og:image" content="undefined">
+<meta charset="UTF-8"><meta property="og:site_name" content="Trường Khải Minh"><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=5.0"><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="site-lib/rss.xml"><script async="" id="webpage-script" src="site-lib/scripts/webpage.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="graph-wasm-script" src="site-lib/scripts/graph-wasm.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="graph-render-worker-script" src="site-lib/scripts/graph-render-worker.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><link rel="icon" href="site-lib/media/favicon.png"><link rel="stylesheet" href="site-lib/styles/obsidian.css"><link rel="preload" href="site-lib/styles/other-plugins.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="site-lib/styles/other-plugins.css"></noscript><link rel="stylesheet" href="site-lib/styles/theme.css"><link rel="preload" href="site-lib/styles/global-variable-styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="site-lib/styles/global-variable-styles.css"></noscript><link rel="preload" href="site-lib/styles/supported-plugins.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="site-lib/styles/supported-plugins.css"></noscript><link rel="preload" href="site-lib/styles/main-styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="site-lib/styles/main-styles.css"></noscript><style>body{--line-width:40em;--line-width-adaptive:40em;--file-line-width:40em;--sidebar-width:min(20em, 80vw);--collapse-arrow-size:11px;--tree-vertical-spacing:1.3em;--sidebar-margin:12px}:root{background-color:#202124}.sidebar{height:100%;font-size:14px;z-index:10;min-width:calc(var(--sidebar-width) + var(--divider-width-hover));max-width:calc(var(--sidebar-width) + var(--divider-width-hover));position:relative;overflow:hidden;overflow:clip;transition:min-width ease-in-out,max-width ease-in-out;transition-duration:.2s;contain:size}#left-sidebar{left:0}#right-sidebar{right:0}.sidebar.is-collapsed{min-width:0;max-width:0}.sidebar.floating{position:absolute}.sidebar .leaf-content{height:100%;min-width:calc(var(--sidebar-width) - var(--divider-width-hover));top:0;padding:var(--sidebar-margin);padding-top:4em;line-height:var(--line-height-tight);background-color:var(--background-secondary);transition:background-color,border-right,border-left,box-shadow;transition-duration:var(--color-fade-speed);transition-timing-function:ease-in-out;position:absolute;display:flex;flex-direction:column}.sidebar:not(.is-collapsed) .leaf-content{min-width:calc(max(100%,var(--sidebar-width)) - 3px);max-width:calc(max(100%,var(--sidebar-width)) - 3px)}#left-sidebar-content{left:0;border-top-right-radius:var(--radius-l);border-bottom-right-radius:var(--radius-l)}#right-sidebar-content{right:0;border-top-left-radius:var(--radius-l);border-bottom-left-radius:var(--radius-l)}.sidebar #left-sidebar-content,.sidebar #right-sidebar-content{contain:none!important;container-type:normal!important;animation:none!important}.sidebar:has(.leaf-content:empty):has(.topbar-content:empty){display:none}.sidebar-topbar{height:calc(2.3em + 2 * var(--sidebar-margin));width:var(--sidebar-width);padding:var(--sidebar-margin);z-index:1;position:fixed;display:flex;align-items:center;transition:width ease-in-out;transition-duration:inherit}.sidebar.is-collapsed .sidebar-topbar{width:calc(2.3em + var(--sidebar-margin) * 2)}.sidebar .sidebar-topbar.is-collapsed{width:0}#left-sidebar .sidebar-topbar{left:0;flex-direction:row;border-top-right-radius:var(--radius-l)}#right-sidebar .sidebar-topbar{right:0;flex-direction:row-reverse;border-top-left-radius:var(--radius-l)}#left-sidebar .topbar-content{margin-right:calc(2.3em + var(--sidebar-margin));flex-direction:row}#right-sidebar .topbar-content{margin-left:calc(2.3em + var(--sidebar-margin));flex-direction:row-reverse}.topbar-content{overflow:hidden visible;overflow:clip visible;width:100%;height:100%;display:flex;align-items:center;transition:inherit}.sidebar.is-collapsed .topbar-content{width:0;transition:inherit}.clickable-icon.sidebar-collapse-icon{background-color:transparent;color:var(--icon-color-focused);padding:2px!important;margin:0!important;height:100%!important;width:2.3em!important;margin-inline:0.14em!important;position:absolute}#left-sidebar .clickable-icon.sidebar-collapse-icon{transform:rotateY(180deg);right:var(--sidebar-margin)}#right-sidebar .clickable-icon.sidebar-collapse-icon{transform:rotateY(180deg);left:var(--sidebar-margin)}.clickable-icon.sidebar-collapse-icon svg.svg-icon{width:100%;height:100%}.feature-title{margin-left:1px;text-transform:uppercase;letter-spacing:.06em;margin-top:.75em;margin-bottom:.75em}.feature-header{display:flex;align-items:center;padding-top:0;font-size:1em;padding-left:0}body.floating-sidebars .sidebar{position:absolute}body{transition:background-color var(--color-fade-speed) ease-in-out}#navbar:not(:empty){display:flex;align-items:center;justify-content:space-between;padding:.5em 1em;width:100%}#main{display:flex;flex-direction:column;height:100%;width:100%;align-items:stretch;justify-content:center}#main-horizontal{display:flex;flex-direction:row;flex-grow:1;width:100%;align-items:stretch;justify-content:center}#center-content{flex-basis:100%;max-width:100%;width:100%;height:100%;display:flex;flex-direction:column;align-items:center;transition:opacity .2s ease-in-out;contain:inline-size}.hide{opacity:0!important;transition:opacity .2s ease-in-out;pointer-events:none}#center-content>.obsidian-document{padding-left:2em;padding-right:1em;margin-bottom:0;width:100%;width:-webkit-fill-available;width:-moz-available;width:fill-available;transition:background-color var(--color-fade-speed) ease-in-out;border-top-right-radius:var(--window-radius,var(--radius-m));border-top-left-radius:var(--window-radius,var(--radius-m));overflow-x:hidden!important;overflow-y:auto!important;display:flex!important;flex-direction:column!important;align-items:center!important;contain:inline-size}body #center-content>.obsidian-document>.markdown-preview-sizer{padding-bottom:80vh;width:100%;max-width:var(--line-width);flex-basis:var(--line-width);transition:background-color var(--color-fade-speed) ease-in-out;contain:inline-size}#center-content>.obsidian-document>div{width:100%!important;transition:background-color var(--color-fade-speed) ease-in-out;contain:inline-size}#center-content>.obsidian-document:not([data-type=markdown]).embed{display:flex;padding:1em;height:100%;width:100%;align-items:center;justify-content:center}#center-content>.obsidian-document:not([data-type=markdown]).embed>*{max-width:100%;max-height:100%;object-fit:contain}:not(h1,h2,h3,h4,h5,h6,li):has(> :is(.math,table)){overflow-x:auto!important}#center-content>.obsidian-document:not([data-type=markdown]){overflow-x:auto;contain:content;padding:0;margin:0;height:100%}.obsidian-document[data-type=attachment]{display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;width:100%}.obsidian-document[data-type=attachment]>*{outline:0;border:none;box-shadow:none}.obsidian-document[data-type=attachment] :is(img){max-width:90%;max-height:90%;object-fit:contain}.obsidian-document[data-type=attachment]>:is(audio){width:100%;max-width:min(90%,var(--line-width))}.obsidian-document[data-type=attachment]>:is(embed,iframe,video){width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain}.canvas-wrapper>:is(.header,.footer){z-index:100;position:absolute;display:flex;justify-content:center;flex-direction:column;width:100%;align-items:center}.scroll-highlight{position:absolute;width:100%;height:100%;pointer-events:none;z-index:1000;background-color:hsla(var(--color-accent-hsl),.25);opacity:0;padding:1em;inset:50%;translate:-50% -50%;border-radius:var(--radius-s)}</style><script defer="">async function loadIncludes(){let e=document.querySelectorAll("link[itemprop='include']");for(const t of e){let e=t.getAttribute("href");try{let o="";if(e.startsWith("https:")||e.startsWith("http:")||"file:"!=window.location.protocol){const n=await fetch(e);if(!n.ok){console.log("Could not include file: "+e),t?.remove();continue}o=await n.text()}else{const t=document.getElementById(btoa(encodeURI(e)));if(t){const e=JSON.parse(decodeURI(atob(t.getAttribute("value")??"")));o=e?.data??""}}let n=document.createRange().createContextualFragment(o);t.before(n),t.remove(),console.log("Included text: "+o),console.log("Included file: "+e)}catch(o){t?.remove(),console.log("Could not include file: "+e,o);continue}}}document.addEventListener("DOMContentLoaded",(()=>{loadIncludes()}));let isFileProtocol="file:"==location.protocol;function waitLoadScripts(e,t){let o=e.map((e=>document.getElementById(e+"-script")));!function e(n){let l=o[n],c=n+1;l?(l&&"true"!=l.getAttribute("loaded")||n<o.length&&e(c),n<o.length&&l.addEventListener("load",(()=>e(c)))):n<o.length?e(c):t()}(0)}</script></head><body class="publish css-settings-manager styled-scrollbars show-inline-title show-ribbon is-focused"><script defer="">let theme=localStorage.getItem("theme")||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");"dark"==theme?(document.body.classList.add("theme-dark"),document.body.classList.remove("theme-light")):(document.body.classList.add("theme-light"),document.body.classList.remove("theme-dark")),window.innerWidth<480?document.body.classList.add("is-phone"):window.innerWidth<768?document.body.classList.add("is-tablet"):window.innerWidth<1024?document.body.classList.add("is-small-screen"):document.body.classList.add("is-large-screen")</script><div class="parsed-feature-container" style="display: contents;"><link itemprop="include" href="site-lib/html/custom-head-content-content.html"></div><div id="main"><div id="navbar"></div><div id="main-horizontal"><div id="left-content" class="leaf" style="--sidebar-width: var(--sidebar-width-left);"><div id="left-sidebar" class="sidebar"><div class="sidebar-handle"></div><div class="sidebar-topbar"><div class="topbar-content"><div id="search-container"><div id="search-wrapper"><input enterkeyhint="search" type="search" spellcheck="false" placeholder="Search..."><div aria-label="Clear search" id="search-clear-button"></div></div></div></div><div class="clickable-icon sidebar-collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><path d="M21 3H3C1.89543 3 1 3.89543 1 5V19C1 20.1046 1.89543 21 3 21H21C22.1046 21 23 20.1046 23 19V5C23 3.89543 22.1046 3 21 3Z"></path><path d="M10 4V20"></path><path d="M4 7H7"></path><path d="M4 10H7"></path><path d="M4 13H7"></path></svg></div></div><div class="sidebar-content-wrapper"><div id="left-sidebar-content" class="leaf-content"><link itemprop="include" href="site-lib/html/file-tree-content.html"></div></div><script defer="">let ls = document.querySelector("#left-sidebar"); ls.classList.toggle("is-collapsed", window.innerWidth < 768); ls.style.setProperty("--sidebar-width", localStorage.getItem("sidebar-left-width"));</script></div></div><div id="center-content" class="leaf"><div class="obsidian-document markdown-preview-view markdown-rendered node-insert-event is-readable-line-width allow-fold-headings allow-fold-lists show-indentation-guide show-properties" data-type="markdown"><style id="MJX-CHTML-styles"></style><pre class="frontmatter language-yaml" style="display: none;"><code class="language-yaml is-loaded"><span class="token key atrule">aliases</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+<span class="token key atrule">date</span><span class="token punctuation">:</span> <span class="token datetime number">2025-11-19</span>
+<span class="token key atrule">parent</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> <span class="token string">"[[TKM - Chương Trình Tam Tư Tứ Lự]]"</span>
+<span class="token key atrule">share_link</span><span class="token punctuation">:</span>
+<span class="token key atrule">share_updated</span><span class="token punctuation">:</span> <span class="token datetime number">2025-11-17T20:34:16+11:00</span>
+<span class="token key atrule">title</span><span class="token punctuation">:</span> TKM <span class="token punctuation">-</span> Đề Cương <span class="token punctuation">-</span> Xác Suất
+<span class="token key atrule">topics</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> <span class="token string">"[[Lecture]]"</span>
+  <span class="token punctuation">-</span> <span class="token string">"[[Probability]]"</span>
+<span class="token key atrule">types</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> <span class="token string">"[[TYPE - Notes]]"</span></code><button class="copy-code-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-copy"><rect x="8" y="8" width="14" height="14" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></pre><div class="markdown-preview-sizer markdown-preview-section"><div class="header"><h1 class="page-title heading inline-title" id="TKM_-_Đề_Cương_-_Xác_Suất_0">TKM - Đề Cương - Xác Suất</h1><div class="data-bar"></div></div><div class="markdown-preview-pusher" style="width: 1px; height: 0.1px; margin-bottom: 0px;"></div><div class="el-h2"><h2 data-heading="Phần A — Xác Suất *có Nghĩa Là gì* (Buổi 1–4)" dir="auto" class="heading" id="Phần_A_—_Xác_Suất_*có_Nghĩa_Là_gì*_(Buổi_1–4)_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Phần A — Xác Suất <em>có Nghĩa Là gì</em> (Buổi 1–4)</h2></div><div class="el-ol"><ol>
+<li data-line="0" dir="auto"><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>
+<p><strong>Vì sao cần xác suất? Ngôn ngữ của bất định</strong></p>
+<ul class="has-list-bullet">
+<li data-line="2" dir="auto"><span class="list-bullet"></span>Phân biệt bất định với thiếu thông tin; vì sao phải lượng hóa hoài nghi.</li>
+<li data-line="3" dir="auto"><span class="list-bullet"></span>Xác suất như một “ngữ pháp” thống nhất xuyên lĩnh vực (không sa vào kỹ thuật).</li>
+<li data-line="4" dir="auto"><span class="list-bullet"></span>Nghệ thuật khai phóng của phán đoán hoài nghi: tách bạch niềm tin, bằng chứng và quyết định.</li>
+</ul>
+</li>
+<li data-line="6" dir="auto"><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>
+<p><strong>Năm diễn giải về xác suất</strong></p>
+<ul class="has-list-bullet">
+<li data-line="8" dir="auto"><span class="list-bullet"></span>Cổ điển, Tần suất, Khuynh hướng (propensity), Lôgic, Chủ quan (Bayes): cốt lõi và giới hạn.</li>
+<li data-line="9" dir="auto"><span class="list-bullet"></span>Mệnh đề đơn nhất so với tuyên bố dài hạn; khi nào mỗi diễn giải thích hợp.</li>
+<li data-line="10" dir="auto"><span class="list-bullet"></span>Tính nhất quán (lập luận “sổ cái Hà Lan”) như chuẩn tối thiểu cho lý tính.</li>
+</ul>
+</li>
+<li data-line="12" dir="auto"><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>
+<p><strong>Tiên đề không cần đại số</strong></p>
+<ul class="has-list-bullet">
+<li data-line="14" dir="auto"><span class="list-bullet"></span>Ba quy tắc của Kolmogorov như “quy tắc tỉnh táo”: không âm, chuẩn hóa, cộng tính.</li>
+<li data-line="15" dir="auto"><span class="list-bullet"></span>Không gian mẫu và biến cố như những câu chuyện, không chỉ là công thức.</li>
+<li data-line="16" dir="auto"><span class="list-bullet"></span>Vì sao cùng một hệ tiên đề cho phép các trường phái bất đồng về ý nghĩa nhưng vẫn tính toán tương thích.</li>
+</ul>
+</li>
+<li data-line="18" dir="auto"><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>
+<p><strong>Ngẫu nhiên, nhân quả và tất yếu</strong></p>
+<ul class="has-list-bullet">
+<li data-line="20" dir="auto"><span class="list-bullet"></span>May rủi vs. tất định; bất định nhận thức (epistemic) vs. bất định bản thể (ontic).</li>
+<li data-line="21" dir="auto"><span class="list-bullet"></span>Tín hiệu, nhiễu và cơn “khát mẫu hình” của con người.</li>
+<li data-line="22" dir="auto"><span class="list-bullet"></span>Thí nghiệm tư duy: xổ số, xáo trộn sách, “luật số nhỏ”.</li>
+</ul>
+</li>
+</ol></div><div class="el-hr"><hr></div><div class="el-h2"><h2 data-heading="Phần B — Điều Kiện Hóa, Độc Lập Và Nghịch Lý (Buổi 5–8)" dir="auto" class="heading" id="Phần_B_—_Điều_Kiện_Hóa,_Độc_Lập_Và_Nghịch_Lý_(Buổi_5–8)_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Phần B — Điều Kiện Hóa, Độc Lập Và Nghịch Lý (Buổi 5–8)</h2></div><div class="el-ol"><ol start="5">
+<li data-line="0" dir="auto"><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>
+<p><strong>Xác suất có điều kiện như một góc nhìn mới</strong></p>
+<ul class="has-list-bullet">
+<li data-line="2" dir="auto"><span class="list-bullet"></span>Từ “xác suất là bao nhiêu?” đến “với thông tin hiện có…”.</li>
+<li data-line="3" dir="auto"><span class="list-bullet"></span>Định lý Bayes như quy tắc học hỏi, không chỉ là máy tính.</li>
+<li data-line="4" dir="auto"><span class="list-bullet"></span>Cập nhật niềm tin bằng dữ kiện; ý niệm tiên nghiệm (prior) bằng ngôn ngữ đời thường.</li>
+</ul>
+</li>
+<li data-line="6" dir="auto"><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>
+<p><strong>Tỷ suất nền và tư duy chẩn đoán</strong></p>
+<ul class="has-list-bullet">
+<li data-line="8" dir="auto"><span class="list-bullet"></span>Độ nhạy/độ đặc hiệu vs. giá trị dự đoán dương/âm; vì sao hiện mắc (prevalence) chi phối.</li>
+<li data-line="9" dir="auto"><span class="list-bullet"></span>Ngụy biện công tố và phép hoán vị điều kiện.</li>
+<li data-line="10" dir="auto"><span class="list-bullet"></span>Thủ pháp thực hành để tránh bỏ qua tỷ suất nền.</li>
+</ul>
+</li>
+<li data-line="12" dir="auto"><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>
+<p><strong>Độc lập, tương quan, nhân quả</strong></p>
+<ul class="has-list-bullet">
+<li data-line="14" dir="auto"><span class="list-bullet"></span>Độc lập như “vô quan hệ thông tin”.</li>
+<li data-line="15" dir="auto"><span class="list-bullet"></span>Tương quan là đồng biến, không phải nguyên nhân; biến ẩn.</li>
+<li data-line="16" dir="auto"><span class="list-bullet"></span>Nghịch lý Simpson: khi bộ phận và toàn thể mâu thuẫn.</li>
+</ul>
+</li>
+<li data-line="18" dir="auto"><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>
+<p><strong>Những câu đố kinh điển, bài học sâu xa</strong></p>
+<ul class="has-list-bullet">
+<li data-line="20" dir="auto"><span class="list-bullet"></span>Monty Hall, nghịch lý ngày sinh, nghịch lý Bertrand (thông điệp cốt lõi).</li>
+<li data-line="21" dir="auto"><span class="list-bullet"></span>Lớp tham chiếu và vì sao “mẫu số đúng” quyết định.</li>
+<li data-line="22" dir="auto"><span class="list-bullet"></span>Đặt câu hỏi tốt để nhận xác suất tốt.</li>
+</ul>
+</li>
+</ol></div><div class="el-hr"><hr></div><div class="el-h2"><h2 data-heading="Phần C — Biến Ngẫu Nhiên Như Những Câu Chuyện (Buổi 9–12)" dir="auto" class="heading" id="Phần_C_—_Biến_Ngẫu_Nhiên_Như_Những_Câu_Chuyện_(Buổi_9–12)_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Phần C — Biến Ngẫu Nhiên Như Những Câu Chuyện (Buổi 9–12)</h2></div><div class="el-ol"><ol start="9">
+<li data-line="0" dir="auto"><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>
+<p><strong>Kỳ vọng và biến thiên như tâm cân bằng</strong></p>
+<ul class="has-list-bullet">
+<li data-line="2" dir="auto"><span class="list-bullet"></span>Kỳ vọng là điểm cân; phương sai là độ rộng thế giới khả dĩ.</li>
+<li data-line="3" dir="auto"><span class="list-bullet"></span>Rủi ro đuôi, phân vị; vì sao trung bình có thể đánh lừa.</li>
+<li data-line="4" dir="auto"><span class="list-bullet"></span>Bất bình đẳng của rủi ro: ai sống ở phần đuôi.</li>
+</ul>
+</li>
+<li data-line="6" dir="auto">
+<p><strong>Đếm thế giới khả dĩ: Bernoulli, Nhị thức, Hình học</strong></p>
+</li>
+</ol></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span>Lần thử và thành/bại như một lăng kính mô hình hóa.</li>
+<li data-line="1" dir="auto"><span class="list-bullet"></span>Khi nào giả định “độc lập, đồng phân phối” hợp lý—khi nào không.</li>
+<li data-line="2" dir="auto"><span class="list-bullet"></span>Diễn giải tỷ lệ thành công mà không cường điệu.</li>
+</ul></div><div class="el-ol"><ol start="11">
+<li data-line="0" dir="auto"><strong>Hiếm gặp và thời gian chờ: trực giác Poisson và mũ</strong></li>
+</ol></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span>Biến cố hiếm theo thời gian/không gian; tính “không nhớ” như lý tưởng.</li>
+<li data-line="1" dir="auto"><span class="list-bullet"></span>Từ đếm sang suất độ; vì sao “trên mỗi đơn vị” giúp làm rõ rủi ro.</li>
+<li data-line="2" dir="auto"><span class="list-bullet"></span>Vón cụm và quá phân tán như tín hiệu cảnh báo.</li>
+</ul></div><div class="el-ol"><ol start="12">
+<li data-line="0" dir="auto"><strong>Chuẩn, luật lũy thừa và cực trị</strong></li>
+</ol></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span>Vì sao nhiều tác động nhỏ tạo chuông (trực giác).</li>
+<li data-line="1" dir="auto"><span class="list-bullet"></span>Đuôi nặng và ngoại lệ: “thiên nga đen” vs. nhiễu thông thường.</li>
+<li data-line="2" dir="auto"><span class="list-bullet"></span>Cực đại/cực tiểu và nguyên tắc thận trọng.</li>
+</ul></div><div class="el-hr"><hr></div><div class="el-h2"><h2 data-heading="Phần D — Thời Gian, Tổng Hợp Và Phụ Thuộc (Buổi 13–16)" dir="auto" class="heading" id="Phần_D_—_Thời_Gian,_Tổng_Hợp_Và_Phụ_Thuộc_(Buổi_13–16)_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Phần D — Thời Gian, Tổng Hợp Và Phụ Thuộc (Buổi 13–16)</h2></div><div class="el-ol"><ol start="13">
+<li data-line="0" dir="auto"><strong>Luật số lớn (không cần chứng minh)</strong></li>
+</ol></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span>Trung bình ổn định—điều kiện và ngoại lệ.</li>
+<li data-line="1" dir="auto"><span class="list-bullet"></span>Khi “nhiều dữ liệu” hữu ích… và khi chỉ lặp lại cùng một thiên lệch.</li>
+</ul></div><div class="el-ol"><ol start="14">
+<li data-line="0" dir="auto"><strong>Định lý giới hạn trung tâm bằng lời</strong></li>
+</ol></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span>Vì sao tổng/số trung bình có dạng chuẩn; phạm vi hiệu lực và ngoại lệ nổi tiếng.</li>
+<li data-line="1" dir="auto"><span class="list-bullet"></span>Sai số chuẩn như “mức bất định của trung bình”.</li>
+</ul></div><div class="el-ol"><ol start="15">
+<li data-line="0" dir="auto"><strong>Bước đi ngẫu nhiên và ý niệm Markov cơ bản</strong></li>
+</ol></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span>Quỹ đạo, bước và ký ức: trực giác về phụ thuộc trạng thái.</li>
+<li data-line="1" dir="auto"><span class="list-bullet"></span>Phá sản con bạc, trạng thái hấp thụ như các truyện ngụ ngôn cảnh tỉnh.</li>
+<li data-line="2" dir="auto"><span class="list-bullet"></span>Hồi quy về trung bình vs. quán tính (momentum) như hai lối kể về phụ thuộc.</li>
+</ul></div><div class="el-ol"><ol start="16">
+<li data-line="0" dir="auto"><strong>Tự tương quan, chế độ và tính phi dừng</strong></li>
+</ol></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span>Khi hôm qua chi phối hôm nay; gãy cấu trúc và chuyển chế độ.</li>
+<li data-line="1" dir="auto"><span class="list-bullet"></span>Trực giác ergodic: trung bình theo thời gian vs. trung bình theo quần thể.</li>
+<li data-line="2" dir="auto"><span class="list-bullet"></span>Lỗi tổng hợp qua các thang thời gian.</li>
+</ul></div><div class="el-hr"><hr></div><div class="el-h2"><h2 data-heading="Phần E — Suy Luận Và Quyết Định (Buổi 17–20)" dir="auto" class="heading" id="Phần_E_—_Suy_Luận_Và_Quyết_Định_(Buổi_17–20)_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Phần E — Suy Luận Và Quyết Định (Buổi 17–20)</h2></div><div class="el-ol"><ol start="17">
+<li data-line="0" dir="auto"><strong>Ước lượng tần suất và “độ tin cậy” — Thực sự nói gì</strong></li>
+</ol></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span>Ước lượng điểm vs. khoảng; “bao phủ” như thuộc tính dài hạn.</li>
+<li data-line="1" dir="auto"><span class="list-bullet"></span>Vì sao p-value trả lời một câu hỏi khác điều ta thường hỏi.</li>
+<li data-line="2" dir="auto"><span class="list-bullet"></span>Kích thước hiệu ứng và bất định như ngôn ngữ của bằng chứng.</li>
+</ul></div><div class="el-ol"><ol start="18">
+<li data-line="0" dir="auto"><strong>Kiểm định, sai số và tái lập</strong></li>
+</ol></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span>Lỗi loại I/II; lực kiểm định như khả năng phát hiện.</li>
+<li data-line="1" dir="auto"><span class="list-bullet"></span>So sánh bội và “mức tự do” của người nghiên cứu (trực giác).</li>
+<li data-line="2" dir="auto"><span class="list-bullet"></span>Tái lập như thực hành xác suất: tin cậy hơn thay vì giật gân.</li>
+</ul></div><div class="el-ol"><ol start="19">
+<li data-line="0" dir="auto"><strong>Cập nhật Bayes và phát biểu khả tín</strong></li>
+</ol></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span>Tiên nghiệm (thông tin, tham chiếu, cực đại entropy) và vai trò của chúng.</li>
+<li data-line="1" dir="auto"><span class="list-bullet"></span>Hậu nghiệm như niềm tin sau dữ kiện; khoảng khả tín (credible interval) là “xác suất tham số nằm trong khoảng”.</li>
+<li data-line="2" dir="auto"><span class="list-bullet"></span>Tư duy phân cấp: “gộp” thông tin giữa các bối cảnh liên hệ (ý niệm).</li>
+</ul></div><div class="el-ol"><ol start="20">
+<li data-line="0" dir="auto"><strong>Quyết định dưới bất định</strong></li>
+</ol></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span>Lợi ích kỳ vọng như kỷ luật hóa sở thích; ái rủi ro bằng ngôn ngữ đời thường.</li>
+<li data-line="1" dir="auto"><span class="list-bullet"></span>Giá trị của thông tin: khi nào thử thêm, khi nào hành động.</li>
+<li data-line="2" dir="auto"><span class="list-bullet"></span>Chi phí sai lầm, ngưỡng quyết định, đường cong quyết định; điểm dừng hợp lý.</li>
+</ul></div><div class="el-hr"><hr></div><div class="el-h2"><h2 data-heading="Phần F — Truyền Thông, Đạo Đức Của Bất Định Và Thói Quen Tư Duy (Buổi 21–24)" dir="auto" class="heading" id="Phần_F_—_Truyền_Thông,_Đạo_Đức_Của_Bất_Định_Và_Thói_Quen_Tư_Duy_(Buổi_21–24)_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Phần F — Truyền Thông, Đạo Đức Của Bất Định Và Thói Quen Tư Duy (Buổi 21–24)</h2></div><div class="el-ol"><ol start="21">
+<li data-line="0" dir="auto"><strong>Dự báo, hiệu chuẩn và chấm điểm trung thực</strong></li>
+</ol></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span>Dự báo xác suất vs. dự báo điểm.</li>
+<li data-line="1" dir="auto"><span class="list-bullet"></span>Hiệu chuẩn (sự kiện 70% có xảy ra ~70% không?) và độ sắc nét.</li>
+<li data-line="2" dir="auto"><span class="list-bullet"></span>Quy tắc chấm điểm đúng đắn (Brier/log) như thiết bị trung thực (ý niệm).</li>
+</ul></div><div class="el-ol"><ol start="22">
+<li data-line="0" dir="auto"><strong>Truyền đạt rủi ro trong đời sống hằng ngày</strong></li>
+</ol></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span>Rủi ro tuyệt đối vs. tương đối; tần suất tự nhiên vs. phần trăm.</li>
+<li data-line="1" dir="auto"><span class="list-bullet"></span>Đọc hiểu dự báo thời tiết, thăm dò ý kiến, kết quả y khoa một cách có trách nhiệm.</li>
+<li data-line="2" dir="auto"><span class="list-bullet"></span>Khung diễn đạt giúp giảm hiểu sai (ý tưởng, không minh họa).</li>
+</ul></div><div class="el-ol"><ol start="23">
+<li data-line="0" dir="auto"><strong>Đạo đức xác suất và đức thận trọng</strong></li>
+</ol></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span>Công bằng là minh bạch về bất định và giả định.</li>
+<li data-line="1" dir="auto"><span class="list-bullet"></span>Minh bạch mô hình, tiên nghiệm và giới hạn.</li>
+<li data-line="2" dir="auto"><span class="list-bullet"></span>Thận trọng và tương xứng khi đuôi phân phối nặng.</li>
+</ul></div><div class="el-ol"><ol start="24">
+<li data-line="0" dir="auto"><strong>Tổng kết: Thói quen tư duy xác suất</strong></li>
+</ol></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span>Bảng kiểm: tỷ suất nền, điều kiện, phương án thay thế, chi phí, đuôi rủi ro.</li>
+<li data-line="1" dir="auto"><span class="list-bullet"></span>Tự phản biện niềm tin; cập nhật không vướng cái tôi.</li>
+<li data-line="2" dir="auto"><span class="list-bullet"></span>Từ quy tắc đến minh triết: sống thoải mái với bất định.</li>
+</ul></div><div class="el-hr"><hr></div><div class="el-h3"><h3 data-heading="Sợi Chỉ Đỏ Của Toàn Khóa" dir="auto" class="heading" id="Sợi_Chỉ_Đỏ_Của_Toàn_Khóa_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Sợi Chỉ Đỏ Của Toàn Khóa</h3></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span><strong>Ý nghĩa trước công thức:</strong> Luôn hỏi “xác suất này <em>ám chỉ</em> điều gì?”.</li>
+<li data-line="1" dir="auto"><span class="list-bullet"></span><strong>Điều kiện ở mọi nơi:</strong> Gần như mọi nhầm lẫn là nhầm lẫn về điều kiện.</li>
+<li data-line="2" dir="auto"><span class="list-bullet"></span><strong>Phân phối thay vì tất định:</strong> Nghĩ bằng khoảng giá trị, không bằng chắc chắn.</li>
+<li data-line="3" dir="auto"><span class="list-bullet"></span><strong>Đuôi quan trọng:</strong> Hiếm không đồng nghĩa với bỏ qua được.</li>
+<li data-line="4" dir="auto"><span class="list-bullet"></span><strong>Nói cho rõ:</strong> Ưu tiên tần suất tự nhiên, ngôn ngữ giản dị, giả định minh bạch.</li>
+</ul></div><div class="el-h1"><h1 data-heading="24-Lecture Course Plan — Probability as Liberal Knowledge (Undergraduate)" dir="auto" class="heading" id="24-Lecture_Course_Plan_—_Probability_as_Liberal_Knowledge_(Undergraduate)_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>24-Lecture Course Plan — Probability as Liberal Knowledge (Undergraduate)</h1></div><div class="el-h2"><h2 data-heading="Unit A — What Probability *Means* (Lectures 1–4)" dir="auto" class="heading" id="Unit_A_—_What_Probability_*Means*_(Lectures_1–4)_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Unit A — What Probability <em>Means</em> (Lectures 1–4)</h2></div><div class="el-ol"><ol>
+<li data-line="0" dir="auto"><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>
+<p><strong>Why Probability? A Language for Uncertainty</strong></p>
+<ul class="has-list-bullet">
+<li data-line="2" dir="auto"><span class="list-bullet"></span>Uncertainty vs. ignorance; why quantify doubt at all.</li>
+<li data-line="3" dir="auto"><span class="list-bullet"></span>Probability as a unifying grammar across domains (without technicalities).</li>
+<li data-line="4" dir="auto"><span class="list-bullet"></span>The liberal art of skeptical judgment: separating belief, evidence, and decision.</li>
+</ul>
+</li>
+<li data-line="6" dir="auto"><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>
+<p><strong>Five Interpretations of Probability</strong></p>
+<ul class="has-list-bullet">
+<li data-line="8" dir="auto"><span class="list-bullet"></span>Classical, Frequentist, Propensity, Logical, Subjective (Bayesian): core ideas and limits.</li>
+<li data-line="9" dir="auto"><span class="list-bullet"></span>Single-case vs. long-run statements; when each interpretation is apt.</li>
+<li data-line="10" dir="auto"><span class="list-bullet"></span>Coherence (Dutch Book) as a minimal rationality standard.</li>
+</ul>
+</li>
+<li data-line="12" dir="auto"><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>
+<p><strong>Axioms without Algebra</strong></p>
+<ul class="has-list-bullet">
+<li data-line="14" dir="auto"><span class="list-bullet"></span>Kolmogorov’s three rules as “rules of sense”: non-negativity, normalization, additivity.</li>
+<li data-line="15" dir="auto"><span class="list-bullet"></span>Sample space and events as stories, not formulas.</li>
+<li data-line="16" dir="auto"><span class="list-bullet"></span>Why shared axioms permit different schools to argue yet still compute compatibly.</li>
+</ul>
+</li>
+<li data-line="18" dir="auto"><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>
+<p><strong>Randomness, Cause, and Necessity</strong></p>
+<ul class="has-list-bullet">
+<li data-line="20" dir="auto"><span class="list-bullet"></span>Chance vs. determinism; epistemic vs. ontic uncertainty.</li>
+<li data-line="21" dir="auto"><span class="list-bullet"></span>Signal, noise, and pattern-hunting; why humans over-see structure.</li>
+<li data-line="22" dir="auto"><span class="list-bullet"></span>Thought experiments: lottery draws, shuffled books, and “law of small numbers.”</li>
+</ul>
+</li>
+</ol></div><div class="el-hr"><hr></div><div class="el-h2"><h2 data-heading="Unit B — Conditioning, Independence, and Paradox (Lectures 5–8)" dir="auto" class="heading" id="Unit_B_—_Conditioning,_Independence,_and_Paradox_(Lectures_5–8)_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Unit B — Conditioning, Independence, and Paradox (Lectures 5–8)</h2></div><div class="el-ol"><ol start="5">
+<li data-line="0" dir="auto"><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>
+<p><strong>Conditional Probability as Changed Perspective</strong></p>
+<ul class="has-list-bullet">
+<li data-line="2" dir="auto"><span class="list-bullet"></span>From “What’s the chance?” to “Given what I now know…”.</li>
+<li data-line="3" dir="auto"><span class="list-bullet"></span>Bayes’ theorem as a rule for learning, not a calculator.</li>
+<li data-line="4" dir="auto"><span class="list-bullet"></span>Updating beliefs with new evidence; the idea of priors in plain language.</li>
+</ul>
+</li>
+<li data-line="6" dir="auto"><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>
+<p><strong>Base Rates and Diagnostic Thinking</strong></p>
+<ul class="has-list-bullet">
+<li data-line="8" dir="auto"><span class="list-bullet"></span>Sensitivity/specificity vs. predictive values (why prevalence rules).</li>
+<li data-line="9" dir="auto"><span class="list-bullet"></span>Prosecutor’s fallacy and transposed conditionals.</li>
+<li data-line="10" dir="auto"><span class="list-bullet"></span>Practical heuristics to avoid base-rate neglect.</li>
+</ul>
+</li>
+<li data-line="12" dir="auto"><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>
+<p><strong>Independence, Correlation, Causation</strong></p>
+<ul class="has-list-bullet">
+<li data-line="14" dir="auto"><span class="list-bullet"></span>Independence as “information irrelevance.”</li>
+<li data-line="15" dir="auto"><span class="list-bullet"></span>Correlation as co-variation, not cause; lurking variables.</li>
+<li data-line="16" dir="auto"><span class="list-bullet"></span>Simpson’s paradox: when parts and wholes disagree.</li>
+</ul>
+</li>
+<li data-line="18" dir="auto"><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>
+<p><strong>Famous Puzzles, Deep Lessons</strong></p>
+<ul class="has-list-bullet">
+<li data-line="20" dir="auto"><span class="list-bullet"></span>Monty Hall, Birthday paradox, Bertrand paradox (conceptual takeaways).</li>
+<li data-line="21" dir="auto"><span class="list-bullet"></span>Reference classes and why “the right denominator” matters.</li>
+<li data-line="22" dir="auto"><span class="list-bullet"></span>Designing better questions to get better probabilities.</li>
+</ul>
+</li>
+</ol></div><div class="el-hr"><hr></div><div class="el-h2"><h2 data-heading="Unit C — Random Variables as Narratives (Lectures 9–12)" dir="auto" class="heading" id="Unit_C_—_Random_Variables_as_Narratives_(Lectures_9–12)_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Unit C — Random Variables as Narratives (Lectures 9–12)</h2></div><div class="el-ol"><ol start="9">
+<li data-line="0" dir="auto"><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>
+<p><strong>Expectation and Variability as Centers of Gravity</strong></p>
+<ul class="has-list-bullet">
+<li data-line="2" dir="auto"><span class="list-bullet"></span>Mean as balance point; variance as spread of plausible worlds.</li>
+<li data-line="3" dir="auto"><span class="list-bullet"></span>Tail risk, percentiles, and why averages can mislead.</li>
+<li data-line="4" dir="auto"><span class="list-bullet"></span>Inequality of risk: who lives in the tails.</li>
+</ul>
+</li>
+<li data-line="6" dir="auto">
+<p><strong>Counting Worlds: Bernoulli, Binomial, Geometric</strong></p>
+</li>
+</ol></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span>Trials and success/failure as a modeling lens.</li>
+<li data-line="1" dir="auto"><span class="list-bullet"></span>When “independent, identical trials” is reasonable—and when not.</li>
+<li data-line="2" dir="auto"><span class="list-bullet"></span>Interpreting success rates without overclaiming.</li>
+</ul></div><div class="el-ol"><ol start="11">
+<li data-line="0" dir="auto"><strong>Rarity and Waiting: Poisson and Exponential Ideas</strong></li>
+</ol></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span>Rare events in time/space; memoryless waiting as an idealization.</li>
+<li data-line="1" dir="auto"><span class="list-bullet"></span>From counts to rates; why “per unit” clarifies risk.</li>
+<li data-line="2" dir="auto"><span class="list-bullet"></span>Clumping and over-dispersion as warning signs.</li>
+</ul></div><div class="el-ol"><ol start="12">
+<li data-line="0" dir="auto"><strong>Normals, Power Laws, and Extremes</strong></li>
+</ol></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span>Why many small effects yield bell curves (in spirit).</li>
+<li data-line="1" dir="auto"><span class="list-bullet"></span>Heavy tails and outliers: black swans vs. garden-variety noise.</li>
+<li data-line="2" dir="auto"><span class="list-bullet"></span>Maximums/minimums, extremes, and precaution.</li>
+</ul></div><div class="el-hr"><hr></div><div class="el-h2"><h2 data-heading="Unit D — Time, Aggregation, and Dependence (Lectures 13–16)" dir="auto" class="heading" id="Unit_D_—_Time,_Aggregation,_and_Dependence_(Lectures_13–16)_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Unit D — Time, Aggregation, and Dependence (Lectures 13–16)</h2></div><div class="el-ol"><ol start="13">
+<li data-line="0" dir="auto"><strong>Law of Large Numbers (LLN) without Proofs</strong></li>
+</ol></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span>Averages stabilize—conditions and caveats.</li>
+<li data-line="1" dir="auto"><span class="list-bullet"></span>When “more data” helps…and when it repeats the same bias.</li>
+</ul></div><div class="el-ol"><ol start="14">
+<li data-line="0" dir="auto"><strong>Central Limit Theorem (CLT) in Plain English</strong></li>
+</ol></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span>Why sums look normal; scope and famous exceptions.</li>
+<li data-line="1" dir="auto"><span class="list-bullet"></span>Standard errors as “uncertainty of the average.”</li>
+</ul></div><div class="el-ol"><ol start="15">
+<li data-line="0" dir="auto"><strong>Random Walks and Simple Markov Ideas</strong></li>
+</ol></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span>Paths, steps, and memory: the intuition of state dependence.</li>
+<li data-line="1" dir="auto"><span class="list-bullet"></span>Gambler’s ruin and absorbing states as cautionary tales.</li>
+<li data-line="2" dir="auto"><span class="list-bullet"></span>Mean reversion vs. momentum as narratives of dependence.</li>
+</ul></div><div class="el-ol"><ol start="16">
+<li data-line="0" dir="auto"><strong>Autocorrelation, Regimes, and Non-Stationarity</strong></li>
+</ol></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span>When yesterday informs today; structural breaks and regime shifts.</li>
+<li data-line="1" dir="auto"><span class="list-bullet"></span>Ergodicity (intuitive): time averages vs. ensemble averages.</li>
+<li data-line="2" dir="auto"><span class="list-bullet"></span>Aggregation fallacies across time scales.</li>
+</ul></div><div class="el-hr"><hr></div><div class="el-h2"><h2 data-heading="Unit E — Inference and Decision (Lectures 17–20)" dir="auto" class="heading" id="Unit_E_—_Inference_and_Decision_(Lectures_17–20)_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Unit E — Inference and Decision (Lectures 17–20)</h2></div><div class="el-ol"><ol start="17">
+<li data-line="0" dir="auto"><strong>Frequentist Estimation and Confidence—What They <em>Really</em> Say</strong></li>
+</ol></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span>Point vs. interval estimates; coverage as a long-run property.</li>
+<li data-line="1" dir="auto"><span class="list-bullet"></span>Why p-values answer a different question than most people think.</li>
+<li data-line="2" dir="auto"><span class="list-bullet"></span>Effect sizes and uncertainty as the language of evidence.</li>
+</ul></div><div class="el-ol"><ol start="18">
+<li data-line="0" dir="auto"><strong>Testing, Error, and Replication</strong></li>
+</ol></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span>Type I/II errors; power as ability to detect.</li>
+<li data-line="1" dir="auto"><span class="list-bullet"></span>Multiple comparisons and researcher degrees of freedom (conceptual).</li>
+<li data-line="2" dir="auto"><span class="list-bullet"></span>Replication as probability practice: reliability over drama.</li>
+</ul></div><div class="el-ol"><ol start="19">
+<li data-line="0" dir="auto"><strong>Bayesian Updating and Credible Statements</strong></li>
+</ol></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span>Priors (informative, reference, maximum entropy) and their roles.</li>
+<li data-line="1" dir="auto"><span class="list-bullet"></span>Posterior as belief after seeing data; credible intervals as “probability the parameter lies here.”</li>
+<li data-line="2" dir="auto"><span class="list-bullet"></span>Hierarchical thinking: pooling information across related contexts (idea only).</li>
+</ul></div><div class="el-ol"><ol start="20">
+<li data-line="0" dir="auto"><strong>Decisions under Uncertainty</strong></li>
+</ol></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span>Expected utility as disciplined preference; risk aversion in words.</li>
+<li data-line="1" dir="auto"><span class="list-bullet"></span>Value of information: when to test, when to act.</li>
+<li data-line="2" dir="auto"><span class="list-bullet"></span>Costs of errors, thresholds, and decision curves; prudent stopping.</li>
+</ul></div><div class="el-hr"><hr></div><div class="el-h2"><h2 data-heading="Unit F — Communication, Ethics of Uncertainty, and Habits of Mind (Lectures 21–24)" dir="auto" class="heading" id="Unit_F_—_Communication,_Ethics_of_Uncertainty,_and_Habits_of_Mind_(Lectures_21–24)_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Unit F — Communication, Ethics of Uncertainty, and Habits of Mind (Lectures 21–24)</h2></div><div class="el-ol"><ol start="21">
+<li data-line="0" dir="auto"><strong>Forecasts, Calibration, and Scoring Truthfully</strong></li>
+</ol></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span>Probability forecasts vs. point predictions.</li>
+<li data-line="1" dir="auto"><span class="list-bullet"></span>Calibration (do 70% events happen ~70% of the time?) and sharpness.</li>
+<li data-line="2" dir="auto"><span class="list-bullet"></span>Proper scoring rules (Brier/log) as honesty devices (conceptual).</li>
+</ul></div><div class="el-ol"><ol start="22">
+<li data-line="0" dir="auto"><strong>Risk Communication for Everyday Life</strong></li>
+</ol></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span>Absolute vs. relative risk; natural frequencies vs. percentages.</li>
+<li data-line="1" dir="auto"><span class="list-bullet"></span>Interpreting weather probabilities, polls, and medical results responsibly.</li>
+<li data-line="2" dir="auto"><span class="list-bullet"></span>Visual and verbal frames that reduce misunderstanding (concepts, not drawing).</li>
+</ul></div><div class="el-ol"><ol start="23">
+<li data-line="0" dir="auto"><strong>Probabilistic Ethics and Prudence</strong></li>
+</ol></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span>Fairness as clarity about uncertainty and assumptions.</li>
+<li data-line="1" dir="auto"><span class="list-bullet"></span>Transparency about models, priors, and limitations.</li>
+<li data-line="2" dir="auto"><span class="list-bullet"></span>Precaution and proportionality when tails are fat.</li>
+</ul></div><div class="el-ol"><ol start="24">
+<li data-line="0" dir="auto"><strong>Capstone: The Probabilistic Habit of Mind</strong></li>
+</ol></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span>A checklist for thinking: base rates, conditionals, alternatives, costs, and tails.</li>
+<li data-line="1" dir="auto"><span class="list-bullet"></span>Red-teaming your own beliefs; updating without ego.</li>
+<li data-line="2" dir="auto"><span class="list-bullet"></span>From rules to wisdom: living comfortably with uncertainty.</li>
+</ul></div><div class="el-hr"><hr></div><div class="el-h3"><h3 data-heading="Course-Wide Throughlines" dir="auto" class="heading" id="Course-Wide_Throughlines_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Course-Wide Throughlines</h3></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span><strong>Meaning before math:</strong> Always ask, “What does this probability <em>refer to</em>?”</li>
+<li data-line="1" dir="auto"><span class="list-bullet"></span><strong>Conditioning everywhere:</strong> Almost all confusion is conditional confusion.</li>
+<li data-line="2" dir="auto"><span class="list-bullet"></span><strong>Distributions not determinism:</strong> Think in ranges, not certainties.</li>
+<li data-line="3" dir="auto"><span class="list-bullet"></span><strong>Tails matter:</strong> Rare does not mean negligible.</li>
+<li data-line="4" dir="auto"><span class="list-bullet"></span><strong>Speak clearly:</strong> Prefer frequencies, plain language, and explicit assumptions.</li>
+</ul></div><div class="el-p"><p dir="auto">This plan keeps computation light, emphasizes conceptual mastery, and cultivates a liberal, disciplined habit of probabilistic reasoning fit for decisions in real life.</p></div><div class="footer"><div class="data-bar"></div></div></div></div></div><div id="right-content" class="leaf" style="--sidebar-width: var(--sidebar-width-right);"><div id="right-sidebar" class="sidebar"><div class="sidebar-handle"></div><div class="sidebar-topbar"><div class="topbar-content"><label class="theme-toggle-container" for="theme-toggle-input" id=""><input class="theme-toggle-input" type="checkbox" id="theme-toggle-input"><div class="toggle-background"></div></label></div><div class="clickable-icon sidebar-collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><path d="M21 3H3C1.89543 3 1 3.89543 1 5V19C1 20.1046 1.89543 21 3 21H21C22.1046 21 23 20.1046 23 19V5C23 3.89543 22.1046 3 21 3Z"></path><path d="M10 4V20"></path><path d="M4 7H7"></path><path d="M4 10H7"></path><path d="M4 13H7"></path></svg></div></div><div class="sidebar-content-wrapper"><div id="right-sidebar-content" class="leaf-content"><div class="graph-view-wrapper"><div class="feature-header"><div class="feature-title">Interactive Graph</div></div><div class="graph-view-placeholder">
+		<div class="graph-view-container">
+			<div class="graph-icon graph-expand" role="button" aria-label="Expand" data-tooltip-position="top"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></div>
+			<div class="graph-icon graph-global" role="button" aria-label="Global Graph" data-tooltip-position="top"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-git-fork"><circle cx="12" cy="18" r="3"></circle><circle cx="6" cy="6" r="3"></circle><circle cx="18" cy="6" r="3"></circle><path d="M18 9v2c0 .6-.4 1-1 1H7c-.6 0-1-.4-1-1V9"></path><path d="M12 12v3"></path></svg></div>
+			<canvas id="graph-canvas" class="hide" width="512px" height="512px"></canvas>
+		</div>
+		</div></div><div id="outline" class=" tree-container"><div class="feature-header"><div class="feature-title">Table Of Contents</div><button class="clickable-icon nav-action-button tree-collapse-all" aria-label="Collapse All"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></svg></button></div><div class="tree-item mod-collapsible" data-depth="1"><a class="tree-item-self is-clickable mod-collapsible" href="#TKM_-_Đề_Cương_-_Xác_Suất_0" data-path="#TKM_-_Đề_Cương_-_Xác_Suất_0"><div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><div class="tree-item-inner heading-link" heading-name="TKM - Đề Cương - Xác Suất">TKM - Đề Cương - Xác Suất</div></a><div class="tree-item-children"><div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable" href="#Phần_A_—_Xác_Suất_*có_Nghĩa_Là_gì*_(Buổi_1–4)_0" data-path="#Phần_A_—_Xác_Suất_*có_Nghĩa_Là_gì*_(Buổi_1–4)_0"><div class="tree-item-inner heading-link" heading-name="Phần A — Xác Suất *có Nghĩa Là gì* (Buổi 1–4)">Phần A — Xác Suất <em>có Nghĩa Là gì</em> (Buổi 1–4)</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable" href="#Phần_B_—_Điều_Kiện_Hóa,_Độc_Lập_Và_Nghịch_Lý_(Buổi_5–8)_0" data-path="#Phần_B_—_Điều_Kiện_Hóa,_Độc_Lập_Và_Nghịch_Lý_(Buổi_5–8)_0"><div class="tree-item-inner heading-link" heading-name="Phần B — Điều Kiện Hóa, Độc Lập Và Nghịch Lý (Buổi 5–8)">Phần B — Điều Kiện Hóa, Độc Lập Và Nghịch Lý (Buổi 5–8)</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable" href="#Phần_C_—_Biến_Ngẫu_Nhiên_Như_Những_Câu_Chuyện_(Buổi_9–12)_0" data-path="#Phần_C_—_Biến_Ngẫu_Nhiên_Như_Những_Câu_Chuyện_(Buổi_9–12)_0"><div class="tree-item-inner heading-link" heading-name="Phần C — Biến Ngẫu Nhiên Như Những Câu Chuyện (Buổi 9–12)">Phần C — Biến Ngẫu Nhiên Như Những Câu Chuyện (Buổi 9–12)</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable" href="#Phần_D_—_Thời_Gian,_Tổng_Hợp_Và_Phụ_Thuộc_(Buổi_13–16)_0" data-path="#Phần_D_—_Thời_Gian,_Tổng_Hợp_Và_Phụ_Thuộc_(Buổi_13–16)_0"><div class="tree-item-inner heading-link" heading-name="Phần D — Thời Gian, Tổng Hợp Và Phụ Thuộc (Buổi 13–16)">Phần D — Thời Gian, Tổng Hợp Và Phụ Thuộc (Buổi 13–16)</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable" href="#Phần_E_—_Suy_Luận_Và_Quyết_Định_(Buổi_17–20)_0" data-path="#Phần_E_—_Suy_Luận_Và_Quyết_Định_(Buổi_17–20)_0"><div class="tree-item-inner heading-link" heading-name="Phần E — Suy Luận Và Quyết Định (Buổi 17–20)">Phần E — Suy Luận Và Quyết Định (Buổi 17–20)</div></a><div class="tree-item-children"></div></div><div class="tree-item mod-collapsible" data-depth="2"><a class="tree-item-self is-clickable mod-collapsible" href="#Phần_F_—_Truyền_Thông,_Đạo_Đức_Của_Bất_Định_Và_Thói_Quen_Tư_Duy_(Buổi_21–24)_0" data-path="#Phần_F_—_Truyền_Thông,_Đạo_Đức_Của_Bất_Định_Và_Thói_Quen_Tư_Duy_(Buổi_21–24)_0"><div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><div class="tree-item-inner heading-link" heading-name="Phần F — Truyền Thông, Đạo Đức Của Bất Định Và Thói Quen Tư Duy (Buổi 21–24)">Phần F — Truyền Thông, Đạo Đức Của Bất Định Và Thói Quen Tư Duy (Buổi 21–24)</div></a><div class="tree-item-children"><div class="tree-item" data-depth="3"><a class="tree-item-self is-clickable" href="#Sợi_Chỉ_Đỏ_Của_Toàn_Khóa_0" data-path="#Sợi_Chỉ_Đỏ_Của_Toàn_Khóa_0"><div class="tree-item-inner heading-link" heading-name="Sợi Chỉ Đỏ Của Toàn Khóa">Sợi Chỉ Đỏ Của Toàn Khóa</div></a><div class="tree-item-children"></div></div></div></div></div></div><div class="tree-item mod-collapsible" data-depth="1"><a class="tree-item-self is-clickable mod-collapsible" href="#24-Lecture_Course_Plan_—_Probability_as_Liberal_Knowledge_(Undergraduate)_0" data-path="#24-Lecture_Course_Plan_—_Probability_as_Liberal_Knowledge_(Undergraduate)_0"><div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><div class="tree-item-inner heading-link" heading-name="24-Lecture Course Plan — Probability as Liberal Knowledge (Undergraduate)">24-Lecture Course Plan — Probability as Liberal Knowledge (Undergraduate)</div></a><div class="tree-item-children"><div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable" href="#Unit_A_—_What_Probability_*Means*_(Lectures_1–4)_0" data-path="#Unit_A_—_What_Probability_*Means*_(Lectures_1–4)_0"><div class="tree-item-inner heading-link" heading-name="Unit A — What Probability *Means* (Lectures 1–4)">Unit A — What Probability <em>Means</em> (Lectures 1–4)</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable" href="#Unit_B_—_Conditioning,_Independence,_and_Paradox_(Lectures_5–8)_0" data-path="#Unit_B_—_Conditioning,_Independence,_and_Paradox_(Lectures_5–8)_0"><div class="tree-item-inner heading-link" heading-name="Unit B — Conditioning, Independence, and Paradox (Lectures 5–8)">Unit B — Conditioning, Independence, and Paradox (Lectures 5–8)</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable" href="#Unit_C_—_Random_Variables_as_Narratives_(Lectures_9–12)_0" data-path="#Unit_C_—_Random_Variables_as_Narratives_(Lectures_9–12)_0"><div class="tree-item-inner heading-link" heading-name="Unit C — Random Variables as Narratives (Lectures 9–12)">Unit C — Random Variables as Narratives (Lectures 9–12)</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable" href="#Unit_D_—_Time,_Aggregation,_and_Dependence_(Lectures_13–16)_0" data-path="#Unit_D_—_Time,_Aggregation,_and_Dependence_(Lectures_13–16)_0"><div class="tree-item-inner heading-link" heading-name="Unit D — Time, Aggregation, and Dependence (Lectures 13–16)">Unit D — Time, Aggregation, and Dependence (Lectures 13–16)</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable" href="#Unit_E_—_Inference_and_Decision_(Lectures_17–20)_0" data-path="#Unit_E_—_Inference_and_Decision_(Lectures_17–20)_0"><div class="tree-item-inner heading-link" heading-name="Unit E — Inference and Decision (Lectures 17–20)">Unit E — Inference and Decision (Lectures 17–20)</div></a><div class="tree-item-children"></div></div><div class="tree-item mod-collapsible" data-depth="2"><a class="tree-item-self is-clickable mod-collapsible" href="#Unit_F_—_Communication,_Ethics_of_Uncertainty,_and_Habits_of_Mind_(Lectures_21–24)_0" data-path="#Unit_F_—_Communication,_Ethics_of_Uncertainty,_and_Habits_of_Mind_(Lectures_21–24)_0"><div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><div class="tree-item-inner heading-link" heading-name="Unit F — Communication, Ethics of Uncertainty, and Habits of Mind (Lectures 21–24)">Unit F — Communication, Ethics of Uncertainty, and Habits of Mind (Lectures 21–24)</div></a><div class="tree-item-children"><div class="tree-item" data-depth="3"><a class="tree-item-self is-clickable" href="#Course-Wide_Throughlines_0" data-path="#Course-Wide_Throughlines_0"><div class="tree-item-inner heading-link" heading-name="Course-Wide Throughlines">Course-Wide Throughlines</div></a><div class="tree-item-children"></div></div></div></div></div></div></div></div></div><script defer="">let rs = document.querySelector("#right-sidebar"); rs.classList.toggle("is-collapsed", window.innerWidth < 768); rs.style.setProperty("--sidebar-width", localStorage.getItem("sidebar-right-width"));</script></div></div></div></div></body></html>
